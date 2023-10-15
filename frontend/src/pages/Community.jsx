@@ -83,7 +83,8 @@ const Community = () => {
 
     try {
       const response = await axios.post(
-        import.meta.env.VITE_API_URL || "http://127.0.0.1:5000/create-post",
+        `${import.meta.env.VITE_API_URL}/create-post` ||
+          "http://127.0.0.1:5000/create-post",
         data
       );
       const res = await response.data;
