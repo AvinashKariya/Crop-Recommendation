@@ -17,6 +17,22 @@ const Navbar = () => {
         <Typography variant='h6' component='div' sx={{ flexGrow: 1, ml: 2 }}>
           Crop Prediction and Showcasing
         </Typography>
+        <Button
+          variant='text'
+          color='inherit'
+          onClick={() => navigate("/")}
+          sx={{ mr: 2 }}
+        >
+          Commodity Price
+        </Button>
+        <Button
+          variant='text'
+          color='inherit'
+          onClick={() => navigate("/community")}
+          sx={{ mr: 2 }}
+        >
+          Community
+        </Button>
         {location.pathname.match("/predict") ? (
           <Button
             variant='outlined'

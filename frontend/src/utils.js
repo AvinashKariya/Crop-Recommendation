@@ -17,7 +17,23 @@ export const cropList = [
       Waterlogging: "Susceptible to root rot in waterlogged soil",
       Drought: "Stresses plants during dry periods",
     },
-    "Possible Diseases": ["Panama disease", "Black Sigatoka", "Fusarium wilt"],
+    "Possible Diseases": [
+      {
+        name: "Panama disease",
+        reason:
+          "Panama disease in bananas is caused by the Fusarium fungus, mainly impacting the Cavendish variety due to its lack of genetic diversity, soil persistence of the pathogen, and global trade facilitating its spread. Control efforts involve quarantine measures, crop rotation, and developing resistant banana varieties.",
+      },
+      {
+        name: "Black Sigatoka",
+        reason:
+          "Black Sigatoka occurs in banana due to the susceptibility of many banana varieties, global trade spreading the disease, and the ability of the fungus to quickly develop resistance to fungicides, making it challenging to control. Control methods include the use of resistant varieties and careful fungicide management.",
+      },
+      {
+        name: "Fusarium wilt",
+        reason:
+          "Fusarium wilt in bananas is caused by the Fusarium oxysporum f. sp. cubense (Foc) fungus, and it occurs due to the pathogen's ability to persist in soil, the genetic uniformity of banana cultivars, and the lack of effective chemical controls. Control strategies include soil management, resistant varieties, and strict quarantine measures.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
       "Potassium sulfate (K2SO4) for potassium supplementation",
@@ -32,7 +48,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Grapes",
-    id: 2,
+    id: 7,
     imgUrl:
       "https://d3fwccq2bzlel7.cloudfront.net/Pictures/1024x536/0/1/4/1014_2_25256_e.jpg",
     "Favorable Conditions": {
@@ -48,9 +64,21 @@ export const cropList = [
       Drought: "Extended dry periods can stress grapevines.",
     },
     "Possible Diseases": [
-      "Downy mildew",
-      "Powdery mildew",
-      "Grapevine leafroll disease",
+      {
+        name: "Downy mildew",
+        reason:
+          "Downy mildew occurs in grapes due to the presence of the pathogen Plasmopara viticola, favorable environmental conditions like high humidity and rainfall, and the susceptibility of grapevines, which can lead to devastating crop losses if not managed.",
+      },
+      {
+        name: "Powdery mildew",
+        reason:
+          "Powdery mildew occurs in grapes due to fungal infections, especially caused by species like Erysiphe necator, thriving in warm, dry conditions and infecting the leaves, berries, and shoots of grapevines.",
+      },
+      {
+        name: "Grapevine leafroll disease",
+        reason:
+          "Grapevine leafroll disease occurs in grapes due to infection by grapevine leafroll-associated viruses (GLRaVs), which affect the vine's vascular system and reduce the vine's ability to ripen fruit properly.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -68,7 +96,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Watermelon",
-    id: 3,
+    id: 21,
     imgUrl:
       "https://thumbs.dreamstime.com/b/watermelon-plant-part-harvest-blossoms-75232350.jpg",
     "Favorable Conditions": {
@@ -83,7 +111,23 @@ export const cropList = [
       Waterlogging: "Excessive moisture in the soil can lead to root rot.",
       Drought: "Extended dry periods can reduce watermelon yield.",
     },
-    "Possible Diseases": ["Fusarium wilt", "Powdery mildew", "Anthracnose"],
+    "Possible Diseases": [
+      {
+        name: "Fusarium wilt",
+        reason:
+          "Fusarium wilt occurs in watermelon due to infection by the Fusarium oxysporum fungus, which attacks the plant's root system and blocks water uptake, leading to wilting and plant death.",
+      },
+      {
+        name: "Powdery mildew",
+        reason:
+          "Powdery mildew occurs in watermelon due to fungal infections, particularly caused by Podosphaera xanthii and Erysiphe cichoracearum, thriving in warm, dry conditions and affecting the leaves and fruit surfaces.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          "Anthracnose occurs in watermelon due to infection by the Colletotrichum species of fungi, which can lead to fruit rot, leaf lesions, and stem cankers, negatively impacting the plant's health and fruit quality.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
       "Calcium (Ca) supplementation to prevent blossom end rot",
@@ -98,7 +142,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Mango",
-    id: 4,
+    id: 12,
     imgUrl:
       "https://media.istockphoto.com/id/1144920687/photo/cluster-of-mangoes-in-the-tree.jpg?s=612x612&w=0&k=20&c=BPm2Rsr-zyJfKCtkYpgdzZL6Jg3nqOgZ68eq8BHcNQM=",
     "Favorable Conditions": {
@@ -115,9 +159,21 @@ export const cropList = [
       Drought: "Protracted dry periods can stress mango trees.",
     },
     "Possible Diseases": [
-      "Anthracnose",
-      "Powdery mildew",
-      "Bacterial black spot",
+      {
+        name: "Bacterial black spot",
+        reason:
+          "Bacterial black spot occurs in mangoes due to infection by the bacterium Xanthomonas campestris, causing dark lesions on fruit, leaves, and stems, ultimately reducing fruit quality and yield.",
+      },
+      {
+        name: "Powdery mildew",
+        reason:
+          "Powdery mildew occurs in mangoes due to fungal infections, often caused by species like Oidium mangiferae, which thrive in warm, humid conditions, leading to a white, powdery growth on leaves, flowers, and fruit.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          "Anthracnose occurs in mangoes due to infection by various Colletotrichum species of fungi, leading to dark, sunken lesions on fruit, leaves, and stems, causing fruit rot and reduced quality.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -135,7 +191,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Muskmelon",
-    id: 5,
+    id: 15,
     imgUrl:
       "https://www.agrilearner.com/wp-content/uploads/2018/06/musk-melon-health-benefits-pharmacological-1.jpg",
     "Favorable Conditions": {
@@ -150,7 +206,23 @@ export const cropList = [
       Waterlogging: "Excessive moisture in the soil can lead to root rot.",
       Drought: "Extended dry periods can reduce muskmelon yield.",
     },
-    "Possible Diseases": ["Fusarium wilt", "Powdery mildew", "Anthracnose"],
+    "Possible Diseases": [
+      {
+        name: "Fusarium wilt",
+        reason:
+          "Fusarium wilt occurs in muskmelons due to infection by the Fusarium oxysporum fungus, which attacks the plant's vascular system, impeding water and nutrient transport, leading to wilting and plant death.",
+      },
+      {
+        name: "Powdery mildew",
+        reason:
+          "Powdery mildew occurs in muskmelons due to fungal infections, typically caused by Podosphaera xanthii or Golovinomyces cichoracearum, favoring warm, dry conditions and affecting leaves and fruit surfaces.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          "Anthracnose occurs in muskmelons due to infection by Colletotrichum species of fungi, leading to dark, sunken lesions on fruit, leaves, and stems, resulting in fruit rot and decreased quality.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
       "Calcium (Ca) supplementation to prevent blossom end rot",
@@ -165,8 +237,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Apple",
-    id: 6,
-
+    id: 0,
     imgUrl:
       "https://plantix.net/en/library/assets/custom/crop-images/apple.jpeg",
     "Favorable Conditions": {
@@ -181,7 +252,23 @@ export const cropList = [
       Waterlogging: "Excessive moisture can lead to root diseases.",
       Drought: "Extended drought can stress apple trees.",
     },
-    "Possible Diseases": ["Apple scab", "Fire blight", "Cedar apple rust"],
+    "Possible Diseases": [
+      {
+        name: "Apple scab",
+        reason:
+          "Apple scab occurs in apples due to fungal infection by Venturia inaequalis, causing dark scaly lesions on leaves and fruit, leading to reduced fruit quality and yield.",
+      },
+      {
+        name: "Fire blight",
+        reason:
+          "Fire blight occurs in apples due to infection by the bacterium Erwinia amylovora, which causes wilting, blackening, and burned appearance in leaves, blossoms, and branches, leading to significant damage in apple orchards.",
+      },
+      {
+        name: "Cedar apple rust",
+        reason:
+          "Cedar apple rust occurs in apples due to a fungal infection caused by Gymnosporangium juniperi-virginianae, with alternate hosts on cedar or juniper trees, resulting in rust-like lesions on apple leaves and fruit.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
       "Calcium (Ca) supplementation to prevent disorders like bitter pit",
@@ -197,8 +284,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Orange",
-    id: 7,
-
+    id: 16,
     imgUrl:
       "https://www.agrifarming.in/wp-content/uploads/2015/03/oranges-1117628_960_720.jpg",
     "Favorable Conditions": {
@@ -213,9 +299,21 @@ export const cropList = [
       Drought: "Prolonged dry spells can harm orange trees.",
     },
     "Possible Diseases": [
-      "Citrus canker",
-      "Citrus greening (Huanglongbing)",
-      "Citrus black spot",
+      {
+        name: "Citrus canker",
+        reason:
+          "Citrus canker affects oranges due to infection by the bacterium Xanthomonas axonopodis, causing raised lesions on fruit, leaves, and stems.",
+      },
+      {
+        name: "Citrus greening (Huanglongbing)",
+        reason:
+          "Citrus greening affects oranges due to infection by the bacterium Candidatus Liberibacter spp., causing mottled leaves, misshapen fruit, and reduced fruit quality.",
+      },
+      {
+        name: "Citrus black spot",
+        reason:
+          " Citrus black spot occurs in oranges due to the fungal pathogen Phyllosticta citricarpa, resulting in dark, raised lesions on fruit surfaces, reducing their marketability.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -233,7 +331,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Papaya",
-    id: 8,
+    id: 17,
     imgUrl:
       "https://www.asiafarming.com/wp-content/uploads/2015/10/High-Density-Papaya-Farming.jpg",
     "Favorable Conditions": {
@@ -250,9 +348,21 @@ export const cropList = [
       Drought: "Extended drought can stress papaya plants.",
     },
     "Possible Diseases": [
-      "Papaya ringspot virus",
-      "Powdery mildew",
-      "Anthracnose",
+      {
+        name: "Papaya ringspot virus",
+        reason:
+          "Papaya ringspot virus infects papayas, causing mottled leaves, ring-shaped lesions on fruit, and stunted growth, leading to severe crop damage.",
+      },
+      {
+        name: "Powdery mildew",
+        reason:
+          "Powdery mildew affects papayas due to fungal infections, creating a white, powdery growth on leaves and fruit surfaces, ultimately reducing fruit quality and yield.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          " Anthracnose in papayas is caused by fungal infection, resulting in dark, sunken lesions on fruit, leaves, and stems, leading to fruit rot and decreased quality.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -268,7 +378,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Coconut",
-    id: 9,
+    id: 4,
     imgUrl:
       "https://cdn.britannica.com/64/198664-050-83CA9198/coconut-palm-tree-Christmas-Island-Kiribati.jpg",
     "Favorable Conditions": {
@@ -285,9 +395,21 @@ export const cropList = [
       Drought: "Prolonged dry spells can affect coconut production.",
     },
     "Possible Diseases": [
-      "Lethal Yellowing Disease",
-      "Coconut Scale Insects",
-      "Bud Rot",
+      {
+        name: "Lethal Yellowing Disease",
+        reason:
+          "Lethal Yellowing Disease affects coconut palms, leading to yellowing and wilting of fronds, ultimately causing tree death.",
+      },
+      {
+        name: "Coconut Scale Insects",
+        reason:
+          "Coconut Scale Insects infest coconut trees, feeding on sap and reducing tree vigor, which can lead to decreased coconut production.",
+      },
+      {
+        name: "Bud Rot",
+        reason:
+          "Bud Rot is a disease that affects coconut palms, causing the rotting of the central bud, leading to frond wilting and death.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -303,7 +425,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Cotton",
-    id: 10,
+    id: 6,
     imgUrl:
       "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202206/cotton-g65a4c857a_1280-sixteen_nine.jpg?size=948:533",
     "Favorable Conditions": {
@@ -318,7 +440,23 @@ export const cropList = [
       Waterlogging: "Excessive moisture can lead to root diseases.",
       Drought: "Extended drought can harm cotton production.",
     },
-    "Possible Pests": ["Bollworms", "Aphids", "Whiteflies"],
+    "Possible Diseases": [
+      {
+        name: "Bollworms",
+        reason:
+          "Bollworms are common cotton pests, feeding on cotton bolls and causing damage to the cotton crop.",
+      },
+      {
+        name: "Aphids",
+        reason:
+          "Aphids can infest cotton plants, feeding on sap and potentially transmitting plant viruses, which can reduce cotton yields.",
+      },
+      {
+        name: "Whiteflies",
+        reason:
+          "Whiteflies can affect cotton by feeding on plant sap and secreting honeydew, leading to sooty mold growth and reduced cotton quality.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Nitrogen (N) fertilizer for vegetative growth",
       "Phosphorus (P) and Potassium (K) for fruiting and fiber development",
@@ -332,7 +470,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Jute",
-    id: 11,
+    id: 8,
     imgUrl:
       "https://upload.wikimedia.org/wikipedia/commons/9/9e/Jute_Field_Bangladesh_%287749587518%29.jpg",
     "Favorable Conditions": {
@@ -348,7 +486,23 @@ export const cropList = [
       Waterlogging: "Excessive moisture can lead to root diseases.",
       Drought: "Extended dry spells can affect jute fiber quality.",
     },
-    "Possible Diseases": ["Jute Stem Rot", "Powdery Mildew", "Leaf Blight"],
+    "Possible Diseases": [
+      {
+        name: "Jute Stem Rot",
+        reason:
+          "Jute Stem Rot is a fungal disease that affects jute plants, causing rotting of the stems and reducing fiber quality and yield.",
+      },
+      {
+        name: "Powdery Mildew",
+        reason:
+          "Powdery Mildew can infect jute, leading to a white, powdery growth on leaves and stems, ultimately reducing fiber quality.",
+      },
+      {
+        name: "Leaf Blight",
+        reason:
+          "Leaf Blight in jute is characterized by the appearance of brown lesions on leaves, which can result in reduced leaf area for photosynthesis and fiber production.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Nitrogen (N) for vegetative growth",
       "Potassium (K) for fiber quality",
@@ -362,7 +516,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Coffee",
-    id: 12,
+    id: 5,
     imgUrl:
       "https://www.asiafarming.com/wp-content/uploads/2017/03/Coffee-Cultivation..jpg",
     "Favorable Conditions": {
@@ -378,9 +532,21 @@ export const cropList = [
       Drought: "Drought can harm coffee production and quality.",
     },
     "Possible Diseases": [
-      "Coffee Leaf Rust",
-      "Coffee Berry Disease",
-      "Root-Knot Nematodes",
+      {
+        name: "Coffee Leaf Rust",
+        reason:
+          "Coffee Leaf Rust is a fungal disease that affects coffee plants, causing orange-yellow lesions on leaves, which can lead to reduced coffee yields.",
+      },
+      {
+        name: "Coffee Berry Disease",
+        reason:
+          "Coffee Berry Disease affects coffee cherries, causing dark, sunken lesions on the fruit, which can result in significant crop losses.",
+      },
+      {
+        name: "Root-Knot Nematodes",
+        reason:
+          "Root-Knot Nematodes infest coffee plant roots, forming knots or galls that reduce root function and nutrient uptake, impacting coffee plant health.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -398,7 +564,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Rice",
-    id: 13,
+    id: 20,
     imgUrl:
       "https://ag.fmc.com/in/sites/default/files/styles/full_margined_width/public/2020-12/5A_5.jpg?itok=yvYnUsuQ",
     "Favorable Conditions": {
@@ -415,7 +581,23 @@ export const cropList = [
       "Cool Temperatures":
         "Rice requires warm temperatures for optimal growth.",
     },
-    "Possible Diseases": ["Rice Blast", "Sheath Blight", "Brown Spot"],
+    "Possible Diseases": [
+      {
+        name: "Rice Blast",
+        reason:
+          "Rice Blast is a fungal disease affecting rice plants, causing lesions on leaves, panicles, and stems, leading to reduced rice yields.",
+      },
+      {
+        name: "Sheath Blight",
+        reason:
+          "Sheath Blight is a common rice disease caused by a fungal pathogen that attacks the sheaths and leaves of rice plants, reducing grain quality and yield.",
+      },
+      {
+        name: "Brown Spot",
+        reason:
+          "Brown Spot affects rice by causing small, dark lesions on leaves, which can lead to reduced photosynthesis and lower rice yields.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Nitrogen (N) for vegetative growth",
       "Phosphorus (P) and Potassium (K) for grain development",
@@ -432,7 +614,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Maize",
-    id: 14,
+    id: 11,
     imgUrl:
       "https://plantix.net/en/library/assets/custom/crop-images/maize.jpeg",
     "Favorable Conditions": {
@@ -447,7 +629,23 @@ export const cropList = [
       Waterlogging: "Excessive water in the soil can damage maize roots.",
       Drought: "Prolonged dry spells can affect maize yield.",
     },
-    "Possible Diseases": ["Maize Rust", "Maize Stalk Rot", "Maize Ear Rot"],
+    "Possible Diseases": [
+      {
+        name: "Maize Rust",
+        reason:
+          "Maize Rust is a fungal disease affecting maize plants, causing reddish-brown pustules on leaves, which can lead to reduced grain yield and quality.",
+      },
+      {
+        name: "Maize Stalk Rot",
+        reason:
+          "Maize Stalk Rot is a disease that affects the stalks of maize plants, causing them to become weak and prone to lodging, resulting in reduced maize harvest.",
+      },
+      {
+        name: "Maize Ear Rot",
+        reason:
+          "Maize Ear Rot is a fungal infection that affects maize ears, leading to moldy, discolored kernels and potentially producing mycotoxins harmful to humans and animals.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
       "Zinc (Zn) and Boron (B) supplementation in deficient soils",
@@ -465,7 +663,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Chickpea",
-    id: 15,
+    id: 3,
     imgUrl:
       "https://media.istockphoto.com/id/484674089/photo/chickpea.jpg?s=612x612&w=0&k=20&c=N8qyDLZ5La4yFe5iK6RDyCIkXgxi-0qUWhua71ePGBk=",
     "Favorable Conditions": {
@@ -482,9 +680,21 @@ export const cropList = [
       Frost: "Chickpeas are sensitive to frost.",
     },
     "Possible Diseases": [
-      "Ascochyta Blight",
-      "Fusarium Wilt",
-      "Botrytis Gray Mold",
+      {
+        name: "Ascochyta Blight",
+        reason:
+          "Ascochyta Blight is a fungal disease affecting chickpea plants, causing brown lesions on leaves, pods, and stems, leading to reduced chickpea yield and quality.",
+      },
+      {
+        name: "Fusarium Wilt",
+        reason:
+          "Fusarium Wilt is a disease that affects chickpea roots, leading to yellowing and wilting of plants, ultimately causing reduced crop productivity.",
+      },
+      {
+        name: "Botrytis Gray Mold",
+        reason:
+          "Botrytis Gray Mold can infect chickpea plants, causing gray, fuzzy mold growth on pods and leaves, which can lead to chickpea pod rot and decreased crop quality.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -502,7 +712,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Kidney Beans",
-    id: 16,
+    id: 9,
     imgUrl:
       "https://www.naturebring.com/wp-content/uploads/2019/02/Red-Kidney-beans22.jpg",
     "Favorable Conditions": {
@@ -518,7 +728,23 @@ export const cropList = [
       Waterlogging: "Excessive moisture can damage roots and lead to diseases.",
       Drought: "Prolonged dry spells can affect kidney bean yield.",
     },
-    "Possible Diseases": ["Common Bean Rust", "Anthracnose", "White Mold"],
+    "Possible Diseases": [
+      {
+        name: "Common Bean Rust",
+        reason:
+          "Common Bean Rust is a fungal disease affecting kidney bean plants, causing reddish-brown pustules on leaves, leading to reduced bean yield and quality.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          "Anthracnose is a disease that can affect kidney beans, causing dark, sunken lesions on pods and leaves, which can lead to reduced bean production and quality.",
+      },
+      {
+        name: "White Mold",
+        reason:
+          "White Mold can infect kidney bean plants, causing white, fluffy mold growth on stems and leaves, which can result in reduced bean yield and quality.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
       "Phosphorus (P) and Potassium (K) for healthy pod development",
@@ -536,7 +762,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Pigeon Peas",
-    id: 17,
+    id: 18,
     imgUrl:
       "https://gardenerspath.com/wp-content/uploads/2022/02/How-to-Grow-Pigeon-Peas-Feature.jpg",
     "Favorable Conditions": {
@@ -551,7 +777,23 @@ export const cropList = [
       Waterlogging: "Excessive moisture can lead to root diseases.",
       Drought: "Prolonged dry spells can affect pigeon pea yield.",
     },
-    "Possible Diseases": ["Pigeon Pea Wilt", "Fusarium Wilt", "Pod Borers"],
+    "Possible Diseases": [
+      {
+        name: "Common Bean Rust",
+        reason:
+          "Common Bean Rust is a fungal disease affecting kidney bean plants, causing reddish-brown pustules on leaves, leading to reduced bean yield and quality.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          "Anthracnose is a disease that can affect kidney beans, causing dark, sunken lesions on pods and leaves, which can lead to reduced bean production and quality.",
+      },
+      {
+        name: "White Mold",
+        reason:
+          "White Mold can infect kidney bean plants, causing white, fluffy mold growth on stems and leaves, which can result in reduced bean yield and quality.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
       "Phosphorus (P) and Potassium (K) for healthy pod development",
@@ -567,7 +809,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Moth Beans",
-    id: 18,
+    id: 13,
     imgUrl:
       "https://t4.ftcdn.net/jpg/03/57/22/93/360_F_357229361_zNsYUtEviitNcha8QQP6WwukBd7rT3KJ.jpg",
     "Favorable Conditions": {
@@ -585,9 +827,21 @@ export const cropList = [
         "Moth beans are relatively drought-tolerant but still require some moisture.",
     },
     "Possible Diseases": [
-      "Moth Bean Yellow Mosaic Virus",
-      "Powdery Mildew",
-      "Anthracnose",
+      {
+        name: "Moth Bean Yellow Mosaic Virus",
+        reason:
+          "Moth Bean Yellow Mosaic Virus is a viral disease affecting moth bean plants, causing yellow mosaic-like symptoms on leaves, which can lead to reduced bean yields.",
+      },
+      {
+        name: "Powdery Mildew",
+        reason:
+          "Powdery Mildew can infect moth bean plants, leading to a white, powdery growth on leaves and pods, ultimately reducing bean quality and yield.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          "Anthracnose is a fungal disease that can affect moth beans, causing dark, sunken lesions on pods and leaves, leading to reduced bean production and quality.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -605,7 +859,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Mung Beans",
-    id: 19,
+    id: 14,
     imgUrl:
       "https://t4.ftcdn.net/jpg/04/37/05/23/360_F_437052352_ZmP9XWUOVSpX9jqEONnAaIKWMB1P9XvY.jpg",
     "Favorable Conditions": {
@@ -621,9 +875,21 @@ export const cropList = [
       Drought: "Prolonged dry spells can affect mung bean yield.",
     },
     "Possible Diseases": [
-      "Mung Bean Yellow Mosaic Virus",
-      "Powdery Mildew",
-      "Anthracnose",
+      {
+        name: "Mung Bean Yellow Mosaic Virus",
+        reason:
+          "Mung Bean Yellow Mosaic Virus is a viral disease affecting mung bean plants, causing yellow mosaic-like symptoms on leaves, which can lead to reduced bean yields.",
+      },
+      {
+        name: "Powdery Mildew",
+        reason:
+          "Powdery Mildew can infect mung bean plants, leading to a white, powdery growth on leaves and pods, ultimately reducing bean quality and yield.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          "Anthracnose is a fungal disease that can affect mung beans, causing dark, sunken lesions on pods and leaves, leading to reduced bean production and quality.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -641,7 +907,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Black Gram",
-    id: 20,
+    id: 2,
     imgUrl:
       "https://previews.123rf.com/images/adineshkumar/adineshkumar1709/adineshkumar170900012/85699362-black-gram.jpg",
     "Favorable Conditions": {
@@ -656,7 +922,23 @@ export const cropList = [
       "Cool Temperatures": "Black gram is sensitive to cool temperatures.",
       Drought: "Prolonged dry spells can affect black gram yield.",
     },
-    "Possible Diseases": ["Leaf Curl Virus", "Powdery Mildew", "Anthracnose"],
+    "Possible Diseases": [
+      {
+        name: "Leaf Curl Virus",
+        reason:
+          "Leaf Curl Virus is a viral disease affecting black gram plants, causing curling and distortion of leaves, which can lead to reduced bean yields.",
+      },
+      {
+        name: "Powdery Mildew",
+        reason:
+          "Powdery Mildew can infect black gram plants, leading to a white, powdery growth on leaves and pods, ultimately reducing bean quality and yield.",
+      },
+      {
+        name: "Anthracnose",
+        reason:
+          "Anthracnose is a fungal disease that can affect black gram, causing dark, sunken lesions on pods and leaves, leading to reduced bean production and quality.",
+      },
+    ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
       "Phosphorus (P) and Potassium (K) for healthy pod development",
@@ -673,7 +955,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Lentil",
-    id: 21,
+    id: 10,
     imgUrl: "https://media.sciencephoto.com/e7/70/09/17/e7700917-800px-wm.jpg",
     "Favorable Conditions": {
       Climate: "Cool to warm temperate climates, 18°C to 25°C (64°F to 77°F)",
@@ -689,9 +971,21 @@ export const cropList = [
       Frost: "Lentils are sensitive to frost.",
     },
     "Possible Diseases": [
-      "Ascochyta Blight",
-      "Fusarium Wilt",
-      "Botrytis Gray Mold",
+      {
+        name: "Ascochyta Blight",
+        reason:
+          "Ascochyta Blight is a fungal disease affecting lentil plants, causing brown lesions on leaves and pods, which can lead to reduced lentil yield and quality.",
+      },
+      {
+        name: "Fusarium Wilt",
+        reason:
+          "Fusarium Wilt is a disease that affects lentil roots, leading to wilting and yellowing of plants, ultimately causing reduced crop productivity.",
+      },
+      {
+        name: "Botrytis Gray Mold",
+        reason:
+          "Botrytis Gray Mold can infect lentil plants, causing gray, fuzzy mold growth on pods and leaves, which can result in lentil pod rot and decreased crop quality.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",
@@ -708,7 +1002,7 @@ export const cropList = [
   },
   {
     "Crop Name": "Pomegranate",
-    id: 22,
+    id: 19,
     imgUrl:
       "https://media.istockphoto.com/id/884148434/photo/pomegranate-trees.jpg?s=612x612&w=0&k=20&c=h7X1DPtPiY-GrMiguVx59IscC0hgUGe4Wg1fG3spIDs=",
     "Favorable Conditions": {
@@ -725,9 +1019,21 @@ export const cropList = [
       Frost: "Pomegranate trees are sensitive to frost.",
     },
     "Possible Diseases": [
-      "Pomegranate Bacterial Blight",
-      "Powdery Mildew",
-      "Fruit Rot",
+      {
+        name: "Pomegranate Bacterial Blight",
+        reason:
+          "Pomegranate Bacterial Blight is a disease affecting pomegranate trees, causing leaf lesions, dieback, and fruit damage, ultimately reducing pomegranate yield.",
+      },
+      {
+        name: "Powdery Mildew",
+        reason:
+          "Powdery Mildew can infect pomegranate plants, leading to a white, powdery growth on leaves and fruit surfaces, which can reduce fruit quality.",
+      },
+      {
+        name: "Fruit Rot",
+        reason:
+          "Fruit Rot in pomegranates is caused by fungal infections, resulting in the rotting of pomegranate fruit, leading to decreased fruit quality and shelf life.",
+      },
     ],
     "Suitable Fertilizers": [
       "Balanced NPK fertilizer with micronutrients",

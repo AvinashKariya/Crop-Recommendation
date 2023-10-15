@@ -7,7 +7,6 @@ import {
   Typography,
 } from "@mui/material";
 const CropCard = ({ data }) => {
-  console.log(data);
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>

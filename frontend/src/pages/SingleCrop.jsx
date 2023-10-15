@@ -6,6 +6,8 @@ import {
   Container,
   Grid,
   Typography,
+  List,
+  ListItem,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
@@ -22,7 +24,6 @@ const SingleCrop = () => {
     const res = cropList.find((crop) => crop.id === parseInt(id));
     setData(res);
     const keys = Object.keys(res["Solution for Disease Prevention"]);
-    console.log(keys);
     setSolution(keys);
   }, []);
   return (
@@ -34,11 +35,11 @@ const SingleCrop = () => {
             style={{ cursor: "pointer" }}
           />
           <Grid container>
-            <Grid item sm={6} xs={12}>
+            <Grid item sm={6} xs={12} xl={6}>
               <img
                 src={data.imgUrl}
                 alt=''
-                style={{ width: "700px", height: "400px" }}
+                style={{ width: "90%", height: "auto", objectFit: "cover" }}
               />
             </Grid>
             <Grid item sm={6}>
@@ -126,7 +127,10 @@ const SingleCrop = () => {
                   </AccordionSummary>
                   <AccordionDetails>
                     {data["Possible Diseases"].map((deases, i) => (
-                      <Typography key={i}>{deases}</Typography>
+                      <Typography variant='h6' key={i}>
+                        {deases.name}
+                        <Typography>{deases.reason}</Typography>
+                      </Typography>
                     ))}
                   </AccordionDetails>
                 </Accordion>
@@ -141,9 +145,13 @@ const SingleCrop = () => {
                     <Typography variant='h5'>Suitable Fertilizers</Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    {data["Suitable Fertilizers"].map((ferti, i) => (
-                      <Typography key={i}>{ferti}</Typography>
-                    ))}
+                    <List>
+                      {data["Suitable Fertilizers"].map((ferti, i) => (
+                        <ListItem key={i}>
+                          <Typography>{ferti}</Typography>
+                        </ListItem>
+                      ))}
+                    </List>
                   </AccordionDetails>
                 </Accordion>
               </div>
