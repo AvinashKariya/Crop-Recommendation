@@ -125,7 +125,11 @@ const Predict = () => {
         ph,
         rainfall,
       };
-      const response = await axios.post("http://127.0.0.1:5000/predict", data);
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/predict` ||
+          "http://127.0.0.1:5000/predict",
+        data
+      );
       const res = await response.data;
       getCropName(res);
       setOpenPrediction(true);
@@ -411,7 +415,7 @@ const Predict = () => {
           <DialogContent>
             <DialogContentText id='alert-dialog-description'>
               Just predicted the crop according to given information! <br />
-              🌱 Here's the result: $
+              🌱 Here's the result:
               {predictText ? predictText["Crop Name"] : ""}🌾
               <br />
               <br />

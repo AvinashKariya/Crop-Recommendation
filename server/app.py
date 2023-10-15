@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask_pymongo import PyMongo
 import pickle
 import json
-
+import pandas as pd
 app = Flask(__name__)
 app.config['MONGO_URI'] = 'mongodb+srv://admin:admin@cluster0.9ng3z20.mongodb.net/mern-app?retryWrites=true&w=majority'
 db = PyMongo(app).db
@@ -59,6 +59,20 @@ def createPost():
     insert=db.post.insert_one(data)
     if insert.inserted_id:
         response = {'message': 'Data added successfully','data':response_data}
+        existing_data = pd.read_csv('./test.csv')
+        new_data = {
+            'N': [response_data['nitrogen']],
+            'P': [response_data['phosphrus']],
+            'K': [response_data['potassium']],
+            'temperature': [response_data['temp']],
+            'humidity': [response_data['humidity']],
+            'ph': [response_data['ph']],
+            'rainfall': [response_data['rainfall']],
+            'label': [response_data['cropname']]
+        }
+        new_data_df=pd.DataFrame(new_data)
+        combined_data = pd.concat([existing_data, new_data_df], ignore_index=True)
+        combined_data.to_csv('./test.csv', index=False)
         return (response), 201
 
 #for getting all posts from databases
