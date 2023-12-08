@@ -29,10 +29,13 @@ const SingleCrop = () => {
   return (
     <>
       {data && (
-        <Container maxWidth='xl' style={{ marginTop: "80px" }}>
+        <Container
+          maxWidth='xl'
+          style={{ marginTop: "80px", marginBottom: "10px" }}
+        >
           <KeyboardBackspaceIcon
             onClick={() => navigate("/")}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: "pointer", marginBottom: "10px" }}
           />
           <Grid container>
             <Grid item sm={6} xs={12} xl={6}>

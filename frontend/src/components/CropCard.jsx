@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 const CropCard = ({ data }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, border: "1px solid #4F6F52" }}>
       <CardActionArea>
         <CardMedia
           component='img'

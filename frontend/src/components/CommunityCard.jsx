@@ -11,7 +11,13 @@ import React from "react";
 
 const CommunityCard = ({ data }) => {
   return (
-    <Card sx={{ width: "450px" }}>
+    <Card
+      sx={{
+        width: "455px",
+        backgroundColor: "#F2FFE9",
+        border: "1px solid #4F6F52",
+      }}
+    >
       <CardContent>
         <Typography variant='h3' fontSize='28px' gutterBottom>
           {data["cropname"]}

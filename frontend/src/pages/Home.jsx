@@ -8,7 +8,10 @@ const Home = () => {
   return (
     <>
       <CssBaseline />
-      <Container maxWidth='xl' style={{ marginTop: "100px" }}>
+      <Container
+        maxWidth='xl'
+        style={{ marginTop: "100px", marginBottom: "10px" }}
+      >
         <Grid container gap={3}>
           {cropList.map((crop, i) => (
             <Link

@@ -4,6 +4,7 @@ from flask_pymongo import PyMongo
 import pickle
 import json
 import pandas as pd
+from bson import ObjectId
 app = Flask(__name__)
 app.config['MONGO_URI'] = 'mongodb+srv://admin:admin@cluster0.9ng3z20.mongodb.net/mern-app?retryWrites=true&w=majority'
 db = PyMongo(app).db
@@ -52,9 +53,9 @@ def createPost():
         "district":data['district'],
         "state":data["state"],
         "country":data["country"],
-        "phone":data["phone"],
         "email":data["email"],
-        "cropname":data["cropname"]
+        "cropname":data["cropname"],
+        "status":"pending"
     }
     insert=db.post.insert_one(data)
     if insert.inserted_id:
@@ -75,10 +76,10 @@ def createPost():
         combined_data.to_csv('./test.csv', index=False)
         return (response), 201
 
-#for getting all posts from databases
+#for getting all posts from databases --user
 @app.route('/get-all-posts',methods=['Get'])
 def getPosts():
-    allData=db.post.find()
+    allData=db.post.find({"status":"active"})
     dataJson=[]
     
     for data in allData:
@@ -94,7 +95,6 @@ def getPosts():
         district=data['district']
         state=data['state']
         country=data['country']
-        phone=data['phone']
         email=data['email']
         cropname=data['cropname']
 
@@ -111,12 +111,73 @@ def getPosts():
             "district":district,
             "state":state,
             "country":country,
-            "phone":phone,
             "email":email,
             "cropname":cropname
         }
         dataJson.append(dataDict)
     return jsonify(dataJson),200
+
+
+#for getting all posts from databases --admin
+@app.route('/get-all-posts-admin',methods=['Get'])
+def getPostsAll():
+    allData=db.post.find()
+    dataJson=[]
+    
+    for data in allData:
+        id=data['_id']
+        nitrogen=data['nitrogen']
+        phosphrus=data['phosphrus']
+        potassium=data['potassium']
+        temp=data['temp']
+        humidity=data['humidity']
+        ph=data['ph']
+        rainfall=data['rainfall']
+        city=data['city']
+        district=data['district']
+        state=data['state']
+        country=data['country']
+        email=data['email']
+        cropname=data['cropname']
+        status=data['status']
+
+        dataDict={
+            "id":str(id),
+            "nitrogen":nitrogen,
+            "phosphrus":phosphrus,
+            "potassium":potassium,
+            "temp":temp,
+            "humidity":humidity,
+            "ph":ph,
+            "rainfall":rainfall,
+            "city":city,
+            "district":district,
+            "state":state,
+            "country":country,
+            "email":email,
+            "cropname":cropname,
+            "status":status
+        }
+        dataJson.append(dataDict)
+    return jsonify(dataJson),200
+
+#for updating status of post --admin
+
+@app.route('/update_status/<object_id>', methods=['PUT'])
+def update_status(object_id):
+    new_status = request.json.get('status')  # Assuming 'status' is sent in the JSON payload
+    
+    # Update the status in MongoDB
+    result =db.post.update_one(
+        {'_id': ObjectId(object_id)},
+        {'$set': {'status': new_status}}
+    )
+    
+    if result.modified_count > 0:
+        return jsonify({'message': 'Status updated successfully'}), 200
+    else:
+        return jsonify({'message': 'Failed to update status'}), 500
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,9 +1,11 @@
 import {
   Button,
+  CircularProgress,
   Container,
   Dialog,
   DialogActions,
   DialogContent,
+  DialogContentText,
   DialogTitle,
   Grid,
   TextField,
@@ -12,8 +14,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { getDetailsByCode } from "../api";
 import CommunityCard from "../components/CommunityCard";
-import firebaseapp, { auth } from "../firebaseConfig";
-import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 const Community = () => {
   const [open, setOpen] = useState(false);
   const [nitrogen, setNitrogen] = useState("");
@@ -28,36 +28,51 @@ const Community = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [data, setData] = useState(null);
+  const [loader, setLoader] = useState(false);
+  const [loader_submit, setLoader_submit] = useState(false);
+  const [openwarning, setOpenWarning] = useState(false);
+  const [errorText, setErrorText] = useState("");
   const handleClickOpen = () => {
     setOpen(true);
+  };
+
+  const handleClickOpenDialogue = (text) => {
+    setOpenWarning(true);
+    setErrorText(text);
+  };
+
+  const handleCloseDialogue = () => {
+    setOpenWarning(false);
   };
 
   const handleClose = () => {
     setOpen(false);
   };
 
-  const setReCaptcha = () => {
-    window.recaptch = new RecaptchaVerifier(
-      "recaptcha-container",
-      { size: "invisible" },
-      auth
-    );
-  };
-  const getOTP = async () => {
-    try {
-      await setReCaptcha();
-      let appVerifier = window.recaptch;
-      signInWithPhoneNumber(auth, phone, appVerifier)
-        .then((res) => {
-          window.confirmaRes = res;
-        })
-        .catch((e) => console.log(e));
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   const handleSubmit = async () => {
+    //validating values
+    if (
+      !nitrogen ||
+      !phosphrus ||
+      !ph ||
+      !potassium ||
+      !rainfall ||
+      !email ||
+      !pincode
+    ) {
+      return handleClickOpenDialogue("All values should be filled!");
+    } else if (
+      isNaN(nitrogen) ||
+      isNaN(phosphrus) ||
+      isNaN(potassium) ||
+      isNaN(ph) ||
+      isNaN(rainfall) ||
+      isNaN(temperature) ||
+      isNaN(humidity)
+    ) {
+      return handleClickOpenDialogue("Values should be numbers");
+    }
+
     const res = await getDetailsByCode(pincode);
     const city = res[0].area;
     const district = res[0].district;
@@ -74,20 +89,20 @@ const Community = () => {
       ph,
       rainfall,
       email,
-      phone,
       district,
       state,
       country,
       city,
+      status: "pending",
     };
-
+    setLoader_submit(true);
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_URL}/create-post` ||
-          "http://127.0.0.1:5000/create-post",
+        "http://127.0.0.1:5000/create-post",
         data
       );
       const res = await response.data;
+      setLoader_submit(false);
       console.log(res);
     } catch (error) {
       console.log(error);
@@ -107,15 +122,14 @@ const Community = () => {
   };
 
   const getPosts = async () => {
+    setLoader(true);
     try {
-      const response = await axios.get(
-        `${import.meta.env.VITE_API_URL}/get-all-posts` ||
-          "http://127.0.0.1:5000/get-all-posts"
-      );
+      const response = await axios.get("http://127.0.0.1:5000/get-all-posts");
       const res = await response.data;
       console.log(response);
       setData(res);
       console.log(res);
+      setLoader(false);
     } catch (error) {}
   };
 
@@ -123,16 +137,24 @@ const Community = () => {
     getPosts();
   }, []);
   return (
-    <Container maxWidth='xl' style={{ marginTop: "100px" }}>
+    <Container
+      maxWidth='xl'
+      style={{ marginTop: "90px", marginBottom: "10px" }}
+    >
       <Grid container justifyContent='flex-end'>
-        <Button variant='contained' onClick={handleClickOpen}>
+        <Button
+          variant='contained'
+          onClick={handleClickOpen}
+          style={{ backgroundColor: "#4F6F52", color: "white" }}
+        >
           Add
         </Button>
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle>Add Post Details</DialogTitle>
+
           <DialogContent>
             <Grid container spacing={2}>
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <TextField
                   label='Phone'
                   name='phone'
@@ -144,7 +166,6 @@ const Community = () => {
                 <Button
                   variant='contained'
                   sx={{ marginTop: "10px", marginLeft: "10px" }}
-                  onClick={getOTP}
                 >
                   Get OTP
                 </Button>
@@ -167,7 +188,7 @@ const Community = () => {
                 >
                   Get OTP
                 </Button>
-              </Grid>
+              </Grid> */}
               <Grid item xs={6}>
                 <TextField
                   label='Pincode'
@@ -286,21 +307,70 @@ const Community = () => {
             </Grid>
           </DialogContent>
           <DialogActions>
-            <Button onClick={handleSubmit}>Submit</Button>
+            <Button
+              onClick={handleSubmit}
+              sx={{ color: "#4F6F52" }}
+              disabled={loader_submit}
+            >
+              {loader_submit ? (
+                <CircularProgress
+                  sx={{
+                    display: "flex",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                  color='success'
+                />
+              ) : (
+                "submit"
+              )}
+            </Button>
             <Button onClick={handleClose} color='error'>
               Cancel
             </Button>
           </DialogActions>
         </Dialog>
+        <Dialog
+          open={openwarning}
+          onClose={handleClose}
+          aria-labelledby='alert-dialog-title'
+          aria-describedby='alert-dialog-description'
+        >
+          <DialogTitle id='alert-dialog-title'>
+            {"Invalid Input Fields !"}
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id='alert-dialog-description'>
+              {errorText}
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleCloseDialogue}>Ok</Button>
+          </DialogActions>
+        </Dialog>
       </Grid>
-      <Grid container gap={5} marginTop='10px'>
-        {data &&
-          data.map((post, i) => (
-            <Grid item key={i}>
-              <CommunityCard data={post} />
-            </Grid>
-          ))}
-      </Grid>
+      {loader && (
+        <CircularProgress
+          sx={{
+            display: "flex",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "10%",
+          }}
+          color='success'
+        />
+      )}
+      {data && (
+        <Grid container gap={5} marginTop='10px'>
+          {data &&
+            !loader &&
+            data.map((post, i) => (
+              <Grid item key={i}>
+                <CommunityCard data={post} />
+              </Grid>
+            ))}
+        </Grid>
+      )}
     </Container>
   );
 };

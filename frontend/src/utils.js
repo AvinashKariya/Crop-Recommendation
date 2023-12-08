@@ -6,11 +6,14 @@ export const cropList = [
       "https://static.wixstatic.com/media/5f1a7b_5d7ad7c672994fb7a51232496e951ff7~mv2.jpg/v1/fill/w_1582,h_797,al_c,q_85/cbanana_edited.jpg",
     "Favorable Conditions": {
       Climate:
-        "Tropical to subtropical, frost-free, 27°C to 32°C (81°F to 89°F)",
+        "Tropical to subtropical, frost-free, 25°C to 30°C (81°F to 89°F)",
       Sunlight: "Full sun, 8-10 hours of direct sunlight",
       Rainfall:
-        "Well-distributed rainfall or irrigation, 1500-2500 mm (60-100 inches) per year",
-      Soil: "Well-drained, fertile, loamy, pH 5.5-7.0",
+        "Well-distributed rainfall or irrigation, 90-120 mm per year",
+      Soil: "Well-drained, fertile, loamy, pH 5.5-6.5",
+      Nitrogen : "80-120 mg",
+      Phosphorus : "70-95 mg",
+      Potassium : "45-55 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Sensitive to frost",
@@ -41,9 +44,9 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 14-6-24 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Panama Disease": "Use disease-resistant banana varieties",
-      "Black Sigatoka": "Implement a regular fungicide spray program",
-      "Fusarium Wilt": "Practice crop rotation with non-susceptible crops",
+      "Panama Disease": "To prevent Panama Disease, it is essential to use disease-resistant banana varieties. Additionally, implementing quarantine measures, practicing crop rotation, and actively developing resistant banana varieties with genetic diversity can be highly effective. These efforts not only control the spread of the Fusarium fungus but also ensure the long-term health of banana crops.",
+      "Black Sigatoka": "For Black Sigatoka prevention, a comprehensive approach is required. Begin with an efficient regular fungicide spray program. Utilize resistant banana varieties and manage fungicides carefully to prevent resistance buildup. Exploring integrated pest management strategies can provide long-term disease control and minimize environmental impact.",
+      "Fusarium Wilt": "Preventing Fusarium Wilt necessitates a multifaceted approach. Implement crop rotation with non-susceptible crops to reduce the disease's impact. Strict quarantine measures should be in place to prevent its spread. Additionally, explore and invest in developing more resistant banana varieties through biotechnology and breeding for sustainable long-term control.",
     },
   },
   {
@@ -52,11 +55,14 @@ export const cropList = [
     imgUrl:
       "https://d3fwccq2bzlel7.cloudfront.net/Pictures/1024x536/0/1/4/1014_2_25256_e.jpg",
     "Favorable Conditions": {
-      Climate: "Temperate to subtropical, 15°C to 35°C (59°F to 95°F)",
+      Climate: "Temperate to subtropical, 10°C to 42°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Well-distributed rainfall or irrigation, about 600-800 mm (24-32 inches) per year",
-      Soil: "Well-drained, loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Well-distributed rainfall or irrigation, about 65-75 mm per year",
+      Soil: "Well-drained, loamy soils, slightly acidic to neutral pH (pH 5.5-6.5)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "120-145 mg",
+      Potassium : "195-205 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Grapevines are sensitive to frost.",
@@ -87,11 +93,11 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 10-10-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Downy Mildew": "Implement a regular fungicide spray program.",
+      "Downy Mildew": "To prevent Downy Mildew, it's crucial to implement a regular fungicide spray program, particularly during the plant's susceptible stages. Additionally, maintain proper plant spacing and provide good air circulation. Early detection and removal of infected plant material, as well as avoiding overhead irrigation, can help minimize disease spread.",
       "Powdery Mildew":
-        "Prune to improve air circulation and use fungicides if needed.",
+        "For effective Powdery Mildew prevention, it's essential to prune the grapevines to improve air circulation within the canopy. This reduces humidity and the conditions favorable for disease development. Additionally, if needed, use appropriate fungicides at the first signs of infection. Regular monitoring and prompt action are key to successful prevention.",
       "Grapevine Leafroll Disease":
-        "Plant disease-free stock and maintain good hygiene.",
+        "Preventing Grapevine Leafroll Disease involves several steps. Start by planting disease-free stock. Regularly monitor vineyards for any signs of infection, such as leaf discoloration. If an infection is detected, promptly remove and destroy infected vines to prevent further spread. Maintaining good hygiene, including sanitizing pruning tools between vines, is crucial to disease control.",
     },
   },
   {
@@ -100,11 +106,14 @@ export const cropList = [
     imgUrl:
       "https://thumbs.dreamstime.com/b/watermelon-plant-part-harvest-blossoms-75232350.jpg",
     "Favorable Conditions": {
-      Climate: "Warm and hot climates, 24°C to 30°C (75°F to 86°F)",
+      Climate: "Warm and hot climates, 24°C to 27°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Well-distributed rainfall or irrigation, about 500-800 mm (20-32 inches) during the growing season",
+        "Well-distributed rainfall or irrigation, about 40-60 mm during the growing season",
       Soil: "Well-drained, sandy or loamy soils, slightly acidic to neutral pH (pH 6-7)",
+      Nitrogen : "80-120 mg",
+      Phosphorus : "5-30 mg",
+      Potassium : "45-55 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Watermelons are sensitive to frost.",
@@ -135,9 +144,9 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 15-15-15 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Fusarium Wilt": "Practice crop rotation with non-susceptible crops.",
-      "Powdery Mildew": "Implement a regular fungicide spray program.",
-      Anthracnose: "Use disease-resistant watermelon varieties.",
+      "Fusarium Wilt": "Preventing Fusarium Wilt necessitates a multifaceted approach. Implement crop rotation with non-susceptible crops to reduce the disease's impact. Strict quarantine measures should be in place to prevent its spread. Additionally, explore and invest in developing more resistant banana varieties through biotechnology and breeding for sustainable long-term control.",
+      "Powdery Mildew": "For effective Powdery Mildew prevention, it's essential to prune the grapevines to improve air circulation within the canopy. This reduces humidity and the conditions favorable for disease development. Additionally, if needed, use appropriate fungicides at the first signs of infection. Regular monitoring and prompt action are key to successful prevention.",
+      "Anthracnose": "Apply fungicides during flowering and fruiting seasons to control Anthracnose. Additionally, prune affected branches and remove infected debris to reduce disease pressure.",
     },
   },
   {
@@ -147,11 +156,14 @@ export const cropList = [
       "https://media.istockphoto.com/id/1144920687/photo/cluster-of-mangoes-in-the-tree.jpg?s=612x612&w=0&k=20&c=BPm2Rsr-zyJfKCtkYpgdzZL6Jg3nqOgZ68eq8BHcNQM=",
     "Favorable Conditions": {
       Climate:
-        "Tropical to subtropical, frost-free, 24°C to 30°C (75°F to 86°F)",
+        "Tropical to subtropical, frost-free, 27°C to 36°C",
       Sunlight: "Full sun, 8-10 hours of direct sunlight",
       Rainfall:
-        "Well-distributed rainfall or irrigation, about 1000-2500 mm (40-100 inches) per year",
-      Soil: "Well-drained, loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Well-distributed rainfall or irrigation, about 80-100 mm",
+      Soil: "Well-drained, loamy soils, slightly acidic to neutral pH (pH 4.5-7)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "15-40 mg",
+      Potassium : "25-35 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Mango trees are sensitive to frost.",
@@ -182,11 +194,11 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 10-20-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      Anthracnose: "Apply fungicides during flowering and fruiting seasons.",
+      "Anthracnose": "Apply fungicides during flowering and fruiting seasons to control Anthracnose. Additionally, prune affected branches and remove infected debris to reduce disease pressure.",
       "Powdery Mildew":
-        "Prune to improve air circulation and use fungicides if needed.",
+        "For effective Powdery Mildew prevention, it's essential to prune the grapevines to improve air circulation within the canopy. This reduces humidity and the conditions favorable for disease development. Additionally, if needed, use appropriate fungicides at the first signs of infection. Regular monitoring and prompt action are key to successful prevention.",
       "Bacterial Black Spot":
-        "Prune affected branches and apply copper-based fungicides.",
+        "Preventing Bacterial Black Spot involves pruning affected branches and applying copper-based fungicides. Regular inspection and prompt action are crucial for controlling the disease and preventing its spread.",
     },
   },
   {
@@ -195,11 +207,14 @@ export const cropList = [
     imgUrl:
       "https://www.agrilearner.com/wp-content/uploads/2018/06/musk-melon-health-benefits-pharmacological-1.jpg",
     "Favorable Conditions": {
-      Climate: "Warm and hot climates, 24°C to 30°C (75°F to 86°F)",
+      Climate: "Warm and hot climates, 27°C to 30°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Well-distributed rainfall or irrigation, about 500-800 mm (20-32 inches) during the growing season",
-      Soil: "Well-drained, sandy or loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Well-distributed rainfall or irrigation, about 20-30 mm during the growing season",
+      Soil: "Well-drained, sandy or loamy soils, slightly acidic to neutral pH (pH 6-6.8)",
+      Nitrogen : "80-120 mg",
+      Phosphorus : "5-30 mg",
+      Potassium : "45-55 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Muskmelons are sensitive to frost.",
@@ -230,9 +245,9 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 15-15-15 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Fusarium Wilt": "Practice crop rotation with non-susceptible crops.",
-      "Powdery Mildew": "Implement a regular fungicide spray program.",
-      Anthracnose: "Use disease-resistant muskmelon varieties.",
+      "Fusarium Wilt": "To prevent Fusarium Wilt, it's crucial to practice crop rotation with non-susceptible crops. This helps break the disease cycle and reduce its impact on muskmelon crops. Additionally, implement strict quarantine measures to prevent the introduction of the pathogen into the field, and explore disease-resistant muskmelon varieties through breeding programs and genetic diversity for sustainable long-term control.",
+      "Powdery Mildew": "For effective Powdery Mildew prevention, implement a regular fungicide spray program, especially during the growing season. Monitor your muskmelon plants closely, and at the first signs of infection, apply fungicides promptly. Pruning to enhance air circulation and reduce humidity can also be beneficial. Integrated pest management practices can provide long-term disease control.",
+      "Anthracnose": "To combat Anthracnose, use disease-resistant muskmelon varieties. These varieties have genetic resistance to the pathogen and are your first line of defense. Additionally, maintain proper plant spacing, good hygiene practices, and reduce overhead irrigation. Regularly inspect your crops and remove any infected plant material to minimize disease spread.",
     },
   },
   {
@@ -242,10 +257,13 @@ export const cropList = [
       "https://plantix.net/en/library/assets/custom/crop-images/apple.jpeg",
     "Favorable Conditions": {
       Climate:
-        "Temperate, 18°C to 24°C (64°F to 75°F), chilling hours for some varieties",
+        "Temperate, 21°C to 24°C, chilling hours for some varieties",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
-      Rainfall: "Adequate moisture, well-distributed rainfall or irrigation",
-      Soil: "Well-drained, loamy soils, slightly acidic to neutral pH (pH 6-7)",
+      Rainfall: "Adequate moisture, well-distributed rainfall or irrigation,100-130 mm rainall over the entire year",
+      Soil: "Well-drained, loamy soils, slightly acidic to neutral pH (pH 5.5-6.5)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "120-145 mg",
+      Potassium : "195-205 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Apple trees may be damaged by late spring frosts.",
@@ -276,10 +294,10 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 10-10-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Apple Scab": "Implement a regular fungicide spray program.",
-      "Fire Blight": "Prune affected branches and apply antibiotics.",
+      "Apple Scab": "To prevent Apple Scab, it's essential to implement a regular fungicide spray program, especially during the growing season. Proper pruning and thinning can also improve air circulation, reducing the conditions favorable for the disease. Timely removal of infected leaves and apple debris further reduces disease pressure.",
+      "Fire Blight": "For effective Fire Blight prevention, start by pruning affected branches during the dormant season. Apply antibiotics during bloom if infection risk is high. Maintain proper orchard hygiene by removing and destroying infected plant material. Regular monitoring and quick action are vital in managing this bacterial disease.",
       "Cedar Apple Rust":
-        "Practice removal of nearby cedar trees and fungicide application.",
+        "Preventing Cedar Apple Rust involves multiple steps. Practice the removal of nearby cedar trees, which serve as an alternate host for the disease. Implement a regular fungicide spray program to protect apple trees. Properly timed fungicide application is crucial for disease control and maintaining healthy apple orchards.",
     },
   },
   {
@@ -288,10 +306,13 @@ export const cropList = [
     imgUrl:
       "https://www.agrifarming.in/wp-content/uploads/2015/03/oranges-1117628_960_720.jpg",
     "Favorable Conditions": {
-      Climate: "Subtropical to tropical, 15°C to 30°C (59°F to 86°F)",
+      Climate: "Subtropical to tropical, 10°C to 35°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
-      Rainfall: "Adequate moisture, well-distributed rainfall or irrigation",
-      Soil: "Well-drained, sandy or loamy soils, slightly acidic to neutral pH (pH 6-7)",
+      Rainfall: "Adequate moisture, well-distributed rainfall or irrigation,100-120 mm rainfall over the entire year",
+      Soil: "Well-drained, sandy or loamy soils, slightly acidic to neutral pH (pH 6-8)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "5-30 mg",
+      Potassium : "5-15 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Orange trees are sensitive to frost.",
@@ -323,10 +344,10 @@ export const cropList = [
       "Example: 10-10-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Citrus Canker":
-        "Implement strict sanitation and copper-based fungicides.",
+        "To prevent Citrus Canker, strict sanitation practices are crucial. Remove and destroy infected plant material promptly. Apply copper-based fungicides to reduce disease pressure. Regularly inspect citrus trees for any signs of infection and take immediate action to control its spread.",
       "Citrus Greening":
-        "Control infected insects, remove infected trees, and use antibiotics.",
-      "Citrus Black Spot": "Implement a regular fungicide spray program.",
+        "For effective Citrus Greening prevention, control infected insects, particularly the Asian citrus psyllid, which spreads the disease. Remove and destroy infected trees to prevent the pathogen's spread. Implement a regular application of antibiotics to protect healthy trees, and maintain orchard hygiene to reduce infection risk.",
+      "Citrus Black Spot": "Preventing Citrus Black Spot requires a regular fungicide spray program, especially during the growing season. Timely application of fungicides is vital to minimize disease impact. Regularly monitor citrus trees and promptly address any signs of infection, ensuring the health and productivity of your citrus orchard.",
     },
   },
   {
@@ -336,11 +357,14 @@ export const cropList = [
       "https://www.asiafarming.com/wp-content/uploads/2015/10/High-Density-Papaya-Farming.jpg",
     "Favorable Conditions": {
       Climate:
-        "Tropical to subtropical, warm temperatures, 21°C to 33°C (70°F to 91°F)",
+        "Tropical to subtropical, warm temperatures, 23°C to 43°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Consistent moisture, about 1000-1500 mm (40-60 inches) of annual rainfall",
-      Soil: "Well-drained, sandy or loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Consistent moisture, about 50-250 mm of annual rainfall",
+      Soil: "Well-drained, sandy or loamy soils, slightly acidic to neutral pH (pH 6.5-7)",
+      Nitrogen : "31-70 mg",
+      Phosphorus : "46-70 mg",
+      Potassium : "45-55 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Papayas are sensitive to frost.",
@@ -371,9 +395,9 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 10-10-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Papaya Ringspot Virus": "Use virus-resistant papaya varieties.",
-      "Powdery Mildew": "Implement a regular fungicide spray program.",
-      Anthracnose: "Prune affected parts and apply fungicides.",
+      "Papaya Ringspot Virus": "To prevent Papaya Ringspot Virus, it's essential to use virus-resistant papaya varieties. These varieties have genetic resistance to the virus and are your primary defense. Additionally, employ strict sanitation practices to remove and destroy infected plants and control aphid vectors for virus transmission.",
+      "Powdery Mildew": "For effective Powdery Mildew prevention, implement a regular fungicide spray program during the growing season. Timely application of fungicides helps control the disease. Prune affected parts to improve air circulation and reduce humidity, which can foster disease development.",
+      "Anthracnose": "Preventing Anthracnose involves pruning affected parts and applying fungicides. Additionally, practice good orchard hygiene to reduce disease pressure. Monitor papaya trees for any signs of infection and take prompt action to prevent further spread of the disease.",
     },
   },
   {
@@ -383,11 +407,14 @@ export const cropList = [
       "https://cdn.britannica.com/64/198664-050-83CA9198/coconut-palm-tree-Christmas-Island-Kiribati.jpg",
     "Favorable Conditions": {
       Climate:
-        "Tropical coastal regions, hot and humid, 27°C to 30°C (81°F to 86°F)",
+        "Tropical coastal regions, hot and humid, 25°C to 30°C",
       Sunlight: "Full sun, 8-10 hours of direct sunlight",
       Rainfall:
-        "Well-distributed rainfall, 1500-2500 mm (60-100 inches) per year",
-      Soil: "Sandy or loamy, well-drained soils, slightly acidic to neutral pH (pH 5.5-7.0)",
+        "Well-distributed rainfall, 130-230 mm per year",
+      Soil: "Sandy or loamy, well-drained soils, slightly acidic to neutral pH (pH 5.5-6.5)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "5-30 mg",
+      Potassium : "25-35 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Coconut palms are sensitive to frost.",
@@ -418,9 +445,9 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 16-8-24 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Lethal Yellowing Disease": "Plant disease-resistant coconut varieties.",
-      "Coconut Scale Insects": "Implement pest management practices.",
-      "Bud Rot": "Prune affected fronds and apply fungicides.",
+      "Lethal Yellowing Disease": "To prevent Lethal Yellowing Disease, it's essential to plant disease-resistant coconut varieties. Resistant varieties are your primary defense against this devastating disease. Regularly monitor coconut palms for any signs of infection and promptly remove and destroy infected palms to reduce disease pressure.",
+      "Coconut Scale Insects": "For effective prevention of Coconut Scale Insects, implement comprehensive pest management practices. This includes introducing natural predators, maintaining good hygiene in the orchard, and using appropriate insecticides when necessary. Regularly inspect coconut palms for any signs of infestation and take swift action to control the insects.",
+      "Bud Rot": "Preventing Bud Rot involves pruning affected fronds to prevent further disease spread. Apply fungicides to affected areas to minimize disease impact. Maintain proper orchard hygiene and remove infected plant material promptly. Regular monitoring and rapid action are vital for Bud Rot prevention.",
     },
   },
   {
@@ -430,10 +457,13 @@ export const cropList = [
       "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202206/cotton-g65a4c857a_1280-sixteen_nine.jpg?size=948:533",
     "Favorable Conditions": {
       Climate:
-        "Warm and semi-arid to sub-tropical regions, 21°C to 30°C (70°F to 86°F)",
+        "Warm and semi-arid to sub-tropical regions, 22°C to 26°C",
       Sunlight: "Full sun, at least 6-8 hours of direct sunlight",
-      Rainfall: "Moderate to low rainfall, 500-1000 mm (20-40 inches) per year",
+      Rainfall: "Moderate to low rainfall, 60-100 mm per year",
       Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 6-7)",
+      Nitrogen : "100-140 mg",
+      Phosphorus : "35-60 mg",
+      Potassium : "15-25 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Cotton is sensitive to frost.",
@@ -463,9 +493,9 @@ export const cropList = [
     ],
     "Fertilizer Proportions": "Example: 20-10-10 (N-P-K ratio)",
     "Solution for Pest Control": {
-      Bollworms: "Implement integrated pest management (IPM) strategies.",
-      Aphids: "Use biological control methods or insecticides when necessary.",
-      Whiteflies: "Implement insecticide treatments as needed.",
+      Bollworms: "To control Bollworms, it's crucial to implement integrated pest management (IPM) strategies. This includes monitoring pest populations, introducing natural predators, and using appropriate insecticides when necessary. IPM helps maintain a balanced ecosystem in the field and reduces the impact of Bollworm infestations.",
+      Aphids: "For effective Aphid control, consider using biological control methods, such as introducing natural enemies like ladybugs or lacewings. When Aphid populations become significant, use targeted insecticides as a last resort to minimize environmental impact. Monitoring and early intervention are key to successful Aphid management.",
+      Whiteflies: "Implement insecticide treatments as needed to control Whiteflies. Regular monitoring of Whitefly populations is essential. When their numbers reach a damaging threshold, use appropriate insecticides to manage the infestation. Maintaining orchard hygiene and good cultural practices can help prevent Whitefly outbreaks.",
     },
   },
   {
@@ -475,11 +505,14 @@ export const cropList = [
       "https://upload.wikimedia.org/wikipedia/commons/9/9e/Jute_Field_Bangladesh_%287749587518%29.jpg",
     "Favorable Conditions": {
       Climate:
-        "Tropical to subtropical, warm and humid, 24°C to 35°C (75°F to 95°F)",
+        "Tropical to subtropical, warm and humid, 23°C to 27°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Well-distributed rainfall, 1500-2500 mm (60-100 inches) per year",
-      Soil: "Alluvial or loamy soils, well-drained, slightly acidic to neutral pH (pH 6-7)",
+        "Well-distributed rainfall, 150-200 mm per year",
+      Soil: "Alluvial or loamy soils, well-drained, slightly acidic to neutral pH (pH 6-7.5)",
+      Nitrogen : "60-100 mg",
+      Phosphorus : "35-60 mg",
+      Potassium : "35-45 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Jute is sensitive to frost.",
@@ -509,9 +542,9 @@ export const cropList = [
     ],
     "Fertilizer Proportions": "Example: 20-10-10 (N-P-K ratio)",
     "Solution for Disease Prevention": {
-      "Jute Stem Rot": "Practice crop rotation and maintain proper drainage.",
-      "Powdery Mildew": "Implement fungicide treatments as needed.",
-      "Leaf Blight": "Use disease-resistant jute varieties.",
+      "Jute Stem Rot": "To prevent Jute Stem Rot, it's crucial to practice crop rotation with non-susceptible crops and ensure proper drainage in the jute field. Adequate water management and crop diversification help reduce disease pressure and maintain healthy jute plants.",
+      "Powdery Mildew": "For effective Powdery Mildew prevention, implement fungicide treatments as needed. Regular monitoring of jute crops is essential to identify the early signs of infection. When Powdery Mildew is detected, apply appropriate fungicides to control the disease and protect the crop.",
+      "Leaf Blight": "Preventing Leaf Blight involves using disease-resistant jute varieties. Resistant varieties have genetic defenses against the pathogen and are your primary defense. Additionally, maintain good field hygiene, including the removal of infected plant material, to reduce disease pressure and ensure a healthy jute crop.",
     },
   },
   {
@@ -521,10 +554,13 @@ export const cropList = [
       "https://www.asiafarming.com/wp-content/uploads/2017/03/Coffee-Cultivation..jpg",
     "Favorable Conditions": {
       Climate:
-        "Tropical highlands, 18°C to 24°C (64°F to 75°F), consistent rainfall",
+        "Tropical highlands, 23°C to 28°C, consistent rainfall",
       Sunlight: "Partial shade with filtered sunlight",
-      Rainfall: "Consistent moisture, 1500-2500 mm (60-100 inches) per year",
-      Soil: "Well-drained, loamy soils, slightly acidic to neutral pH (pH 6-6.5)",
+      Rainfall: "Consistent moisture, 115-200 mm per year",
+      Soil: "Well-drained, loamy soils, slightly acidic to neutral pH (pH 6-7.5)",
+      Nitrogen : "80-120 mg",
+      Phosphorus : "15-40 mg",
+      Potassium : "25-35 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Coffee plants are sensitive to frost.",
@@ -555,11 +591,11 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 14-14-14 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Coffee Leaf Rust": "Implement regular fungicide spray programs.",
+      "Coffee Leaf Rust": "To prevent Coffee Leaf Rust, it's essential to implement regular fungicide spray programs. Timely application of fungicides during the growing season helps control the disease and protect coffee plants. Regular monitoring is vital to detect the disease early.",
       "Coffee Berry Disease":
-        "Harvest and dispose of infected berries properly.",
+        "For effective Coffee Berry Disease prevention, ensure proper harvest and disposal of infected berries. Promptly remove and destroy infected berries to prevent the spread of the pathogen. Good field hygiene practices are essential to minimize disease impact.",
       "Root-Knot Nematodes":
-        "Use nematode-resistant coffee varieties and crop rotation.",
+        "Preventing Root-Knot Nematodes involves using nematode-resistant coffee varieties and practicing crop rotation. Resistant varieties are the primary defense against nematodes, and crop rotation with non-susceptible crops helps break the nematode life cycle. These strategies are crucial for long-term nematode control.",
     },
   },
   {
@@ -569,11 +605,14 @@ export const cropList = [
       "https://ag.fmc.com/in/sites/default/files/styles/full_margined_width/public/2020-12/5A_5.jpg?itok=yvYnUsuQ",
     "Favorable Conditions": {
       Climate:
-        "Warm and humid tropical to subtropical regions, 20°C to 35°C (68°F to 95°F)",
+        "Warm and humid tropical to subtropical regions, 20°C to 27°C",
       Sunlight: "Full sun, at least 6-8 hours of direct sunlight",
       Rainfall:
-        "Abundant and well-distributed rainfall or irrigation, 1500-2500 mm (60-100 inches) per year",
-      Soil: "Flooded or waterlogged soil for flooded rice (paddy), well-drained loamy soils for upland rice, slightly acidic to neutral pH (pH 6-7)",
+        "Abundant and well-distributed rainfall or irrigation, 180-300 mm per year",
+      Soil: "Flooded or waterlogged soil for flooded rice (paddy), well-drained loamy soils for upland rice, slightly acidic to neutral pH (pH 5-8)",
+      Nitrogen : "60-100 mg",
+      Phosphorus : "35-60 mg",
+      Potassium : "35-45 mg"
     },
     "Unfavorable Conditions": {
       Drought: "Rice is sensitive to drought.",
@@ -605,11 +644,11 @@ export const cropList = [
     "Fertilizer Proportions": "Example: 14-14-14 (N-P-K ratio)",
     "Solution for Disease Prevention": {
       "Rice Blast":
-        "Implement fungicide treatments and plant disease-resistant varieties.",
+        "To prevent Rice Blast, it's essential to implement a comprehensive approach. Use disease-resistant rice varieties that offer genetic resistance to the pathogen. Additionally, implement regular fungicide treatments during the growing season to control the disease and protect rice crops.",
       "Sheath Blight":
-        "Practice proper field sanitation and use fungicides as needed.",
+        "For effective Sheath Blight prevention, practice proper field sanitation and maintain good orchard hygiene. Remove and destroy infected plant material promptly to reduce disease pressure. Use fungicides as needed, particularly during periods of high disease risk.",
       "Brown Spot":
-        "Implement disease-resistant varieties and maintain field hygiene.",
+        "Preventing Brown Spot involves using disease-resistant rice varieties that have genetic defenses against the pathogen. Additionally, maintain field hygiene by removing infected plant material. These combined efforts are crucial for disease prevention and ensuring the health of rice crops.",
     },
   },
   {
@@ -618,11 +657,14 @@ export const cropList = [
     imgUrl:
       "https://plantix.net/en/library/assets/custom/crop-images/maize.jpeg",
     "Favorable Conditions": {
-      Climate: "Warm and temperate regions, 18°C to 30°C (64°F to 86°F)",
+      Climate: "Warm and temperate regions, 18°C to 27°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Adequate rainfall or irrigation, 500-1000 mm (20-40 inches) per year",
-      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Adequate rainfall or irrigation, 60-110 mm per year",
+      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 5.5-7)",
+      Nitrogen : "60-100 mg",
+      Phosphorus : "35-60 mg",
+      Potassium : "15-25 mg"
     },
     "Unfavorable Conditions": {
       "Cool Temperatures": "Maize prefers warm temperatures for growth.",
@@ -654,11 +696,11 @@ export const cropList = [
       "Example: 18-18-18 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Maize Rust":
-        "Implement fungicide treatments and use disease-resistant varieties.",
+        "To prevent Maize Rust, it's essential to implement a multifaceted approach. Utilize disease-resistant maize varieties that offer genetic resistance to the pathogen. Additionally, apply fungicide treatments during the growing season to control the disease and protect maize crops.",
       "Maize Stalk Rot":
-        "Ensure proper crop rotation and avoid excessive nitrogen fertilization.",
+        "For effective Maize Stalk Rot prevention, ensure proper crop rotation with non-susceptible crops. Avoid excessive nitrogen fertilization, which can promote disease development. Good agronomic practices and soil management are essential for reducing disease risk.",
       "Maize Ear Rot":
-        "Practice good field sanitation and use fungicides if needed.",
+        "Preventing Maize Ear Rot involves practicing good field sanitation. Remove and destroy infected plant material promptly to reduce disease pressure. Use fungicides as needed, particularly during periods of high disease risk. Maintaining maize crop hygiene is crucial for disease prevention.",
     },
   },
   {
@@ -667,11 +709,14 @@ export const cropList = [
     imgUrl:
       "https://media.istockphoto.com/id/484674089/photo/chickpea.jpg?s=612x612&w=0&k=20&c=N8qyDLZ5La4yFe5iK6RDyCIkXgxi-0qUWhua71ePGBk=",
     "Favorable Conditions": {
-      Climate: "Cool to warm temperate climates, 18°C to 25°C (64°F to 77°F)",
+      Climate: "Cool to warm temperate climates, 17°C to 21°C",
       Sunlight: "Full sun, at least 6-8 hours of direct sunlight",
       Rainfall:
-        "Moderate and well-distributed rainfall or irrigation, 400-600 mm (16-24 inches) per year",
-      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Moderate and well-distributed rainfall or irrigation, 65-95 mm per year",
+      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 6-9)",
+      Nitrogen : "20-60 mg",
+      Phosphorus : "55-80 mg",
+      Potassium : "75-85 mg"
     },
     "Unfavorable Conditions": {
       Waterlogging: "Excessive moisture can lead to root diseases.",
@@ -704,10 +749,10 @@ export const cropList = [
       "Example: 10-20-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Ascochyta Blight":
-        "Use disease-resistant chickpea varieties and implement fungicide treatments.",
-      "Fusarium Wilt": "Practice crop rotation and use resistant varieties.",
+        "To prevent Ascochyta Blight, it's essential to use disease-resistant chickpea varieties. These varieties offer genetic resistance to the pathogen. Additionally, implement fungicide treatments during the growing season to control the disease and protect chickpea crops.",
+      "Fusarium Wilt": "For effective Fusarium Wilt prevention, practice crop rotation with non-susceptible crops and avoid planting chickpeas in the same field for several years. Utilize disease-resistant chickpea varieties to reduce disease impact. These strategies help maintain healthy chickpea crops.",
       "Botrytis Gray Mold":
-        "Improve air circulation and use fungicides if needed.",
+        "Preventing Botrytis Gray Mold involves improving air circulation within the chickpea crop. This reduces humidity and disease-friendly conditions. Use fungicides as needed, especially during periods of high disease risk. Monitoring and prompt intervention are vital for effective disease control.",
     },
   },
   {
@@ -717,11 +762,14 @@ export const cropList = [
       "https://www.naturebring.com/wp-content/uploads/2019/02/Red-Kidney-beans22.jpg",
     "Favorable Conditions": {
       Climate:
-        "Warm temperate to subtropical regions, 18°C to 28°C (64°F to 82°F)",
+        "Warm temperate to subtropical regions, 15°C to 25°C",
       Sunlight: "Full sun, at least 6-8 hours of direct sunlight",
       Rainfall:
-        "Moderate and well-distributed rainfall, 500-1000 mm (20-40 inches) per year",
-      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Moderate and well-distributed rainfall, 60-150 mm per year",
+      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 5.5-6)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "55-80 mg",
+      Potassium : "15-25 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Kidney beans are sensitive to frost.",
@@ -753,11 +801,11 @@ export const cropList = [
       "Example: 14-14-14 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Common Bean Rust":
-        "Implement fungicide treatments and use disease-resistant varieties.",
-      Anthracnose:
-        "Practice good field sanitation and use fungicides as needed.",
+        "To prevent Common Bean Rust, it's essential to implement fungicide treatments during the growing season and use disease-resistant bean varieties. These combined strategies help control the disease and protect common bean crops.",
+      "Anthracnose":
+        "For effective Anthracnose prevention, practice good field sanitation by removing and destroying infected plant material. Use fungicides as needed, particularly during periods of high disease risk. Maintaining proper field hygiene is essential for minimizing disease impact.",
       "White Mold":
-        "Improve air circulation and reduce excessive moisture in the field.",
+        "Preventing White Mold involves improving air circulation within the bean crop and reducing excessive moisture in the field. Proper irrigation and drainage practices can help create less favorable conditions for the disease. Monitoring and early intervention are key to effective disease control.",
     },
   },
   {
@@ -766,11 +814,14 @@ export const cropList = [
     imgUrl:
       "https://gardenerspath.com/wp-content/uploads/2022/02/How-to-Grow-Pigeon-Peas-Feature.jpg",
     "Favorable Conditions": {
-      Climate: "Tropical to subtropical regions, 21°C to 30°C (70°F to 86°F)",
+      Climate: "Tropical to subtropical regions, 18°C to 37°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Moderate to high rainfall or irrigation, 800-2000 mm (32-80 inches) per year",
-      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Moderate to high rainfall or irrigation, 90-200 mm per year",
+      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 4.5-7.5)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "55-80 mg",
+      Potassium : "15-25 mg"
     },
     "Unfavorable Conditions": {
       Frost: "Pigeon peas are sensitive to frost.",
@@ -801,10 +852,10 @@ export const cropList = [
     "Fertilizer Proportions":
       "Example: 10-20-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
-      "Pigeon Pea Wilt": "Practice crop rotation and use resistant varieties.",
+      "Pigeon Pea Wilt": "To prevent Pigeon Pea Wilt, practice crop rotation with non-susceptible crops and utilize resistant pigeon pea varieties. These strategies help break the disease cycle and protect pigeon pea crops from wilt.",
       "Fusarium Wilt":
-        "Implement disease management strategies and use disease-resistant varieties.",
-      "Pod Borers": "Implement integrated pest management (IPM) practices.",
+        "For effective Fusarium Wilt prevention, implement disease management strategies such as soil fumigation and biocontrol agents. Additionally, use disease-resistant pigeon pea varieties to reduce disease impact. Combining these measures is crucial for long-term disease control.",
+      "Pod Borers": "Preventing Pod Borers involves implementing integrated pest management (IPM) practices. This includes the use of natural predators, pheromone traps, and cultural practices to manage pest populations. IPM helps maintain a balanced ecosystem and minimize the impact of pod borers on pigeon pea crops.",
     },
   },
   {
@@ -814,11 +865,14 @@ export const cropList = [
       "https://t4.ftcdn.net/jpg/03/57/22/93/360_F_357229361_zNsYUtEviitNcha8QQP6WwukBd7rT3KJ.jpg",
     "Favorable Conditions": {
       Climate:
-        "Warm and arid to semi-arid regions, 25°C to 35°C (77°F to 95°F)",
+        "Warm and arid to semi-arid regions, 24°C to 32°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Low to moderate rainfall or irrigation, 300-600 mm (12-24 inches) per year",
-      Soil: "Well-drained sandy or loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Low to moderate rainfall or irrigation, 30-75 mm (12-24 inches) per year",
+      Soil: "Well-drained sandy or loamy soils, slightly acidic to neutral pH (pH 3.5-10)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "35-60 mg",
+      Potassium : "15-25 mg"
     },
     "Unfavorable Conditions": {
       "Excessive Rainfall": "Moth beans are sensitive to waterlogging.",
@@ -851,10 +905,10 @@ export const cropList = [
       "Example: 14-14-14 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Moth Bean Yellow Mosaic Virus":
-        "Use virus-resistant varieties and control insect vectors.",
-      "Powdery Mildew": "Implement fungicide treatments as needed.",
-      Anthracnose:
-        "Use disease-resistant varieties and maintain field sanitation.",
+        "To prevent Moth Bean Yellow Mosaic Virus, use virus-resistant varieties that provide genetic resistance to the virus. Additionally, implement control measures for insect vectors such as aphids, which transmit the virus. These combined strategies help protect moth bean crops from the virus.",
+      "Powdery Mildew": "For effective Powdery Mildew prevention, implement fungicide treatments as needed during the growing season. Regular monitoring is essential to detect the disease early. Timely application of fungicides helps control the disease and protect moth bean crops.",
+      "Anthracnose":
+        "Preventing Anthracnose involves using disease-resistant varieties of moth beans. Resistant varieties have genetic defenses against the pathogen. Maintain proper field sanitation by removing and destroying infected plant material to minimize disease pressure and ensure healthy moth bean crops.",
     },
   },
   {
@@ -863,11 +917,14 @@ export const cropList = [
     imgUrl:
       "https://t4.ftcdn.net/jpg/04/37/05/23/360_F_437052352_ZmP9XWUOVSpX9jqEONnAaIKWMB1P9XvY.jpg",
     "Favorable Conditions": {
-      Climate: "Warm and tropical regions, 25°C to 35°C (77°F to 95°F)",
+      Climate: "Warm and tropical regions, 27°C to 30°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Moderate to high rainfall or irrigation, 500-1000 mm (20-40 inches) per year",
+        "Moderate to high rainfall or irrigation, 36-60 mm per year",
       Soil: "Well-drained loamy or sandy soils, slightly acidic to neutral pH (pH 6-7)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "35-60 mg",
+      Potassium : "15-25 mg"
     },
     "Unfavorable Conditions": {
       Waterlogging: "Excessive moisture can lead to root diseases.",
@@ -899,10 +956,10 @@ export const cropList = [
       "Example: 14-14-14 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Mung Bean Yellow Mosaic Virus":
-        "Use virus-resistant varieties and control insect vectors.",
-      "Powdery Mildew": "Implement fungicide treatments as needed.",
-      Anthracnose:
-        "Use disease-resistant varieties and maintain field sanitation.",
+        "To prevent Mung Bean Yellow Mosaic Virus, use virus-resistant mung bean varieties that provide genetic resistance to the virus. Additionally, implement control measures for insect vectors that transmit the virus. These combined strategies help protect mung bean crops from the virus.",
+      "Powdery Mildew": "For effective Powdery Mildew prevention, implement fungicide treatments as needed during the growing season. Regular monitoring is essential to detect the disease early. Timely application of fungicides helps control the disease and protect mung bean crops.",
+      "Anthracnose":
+        "Preventing Anthracnose involves using disease-resistant varieties of mung beans. Resistant varieties have genetic defenses against the pathogen. Maintain proper field sanitation by removing and destroying infected plant material to minimize disease pressure and ensure healthy mung bean crops.",
     },
   },
   {
@@ -911,11 +968,14 @@ export const cropList = [
     imgUrl:
       "https://previews.123rf.com/images/adineshkumar/adineshkumar1709/adineshkumar170900012/85699362-black-gram.jpg",
     "Favorable Conditions": {
-      Climate: "Warm and subtropical regions, 25°C to 35°C (77°F to 95°F)",
+      Climate: "Warm and subtropical regions, 25°C to 35°C",
       Sunlight: "Full sun, 6-8 hours of direct sunlight",
       Rainfall:
-        "Moderate to high rainfall or irrigation, 600-1000 mm (24-40 inches) per year",
-      Soil: "Well-drained loamy or sandy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Moderate to high rainfall or irrigation, 60-75 mm per year",
+      Soil: "Well-drained loamy or sandy soils, slightly acidic to neutral pH (pH 6-8)",
+      Nitrogen : "20-60 mg",
+      Phosphorus : "55-80 mg",
+      Potassium : "15-25 mg"
     },
     "Unfavorable Conditions": {
       Waterlogging: "Excessive moisture can lead to root diseases.",
@@ -947,10 +1007,10 @@ export const cropList = [
       "Example: 14-14-14 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Leaf Curl Virus":
-        "Use virus-resistant varieties and control insect vectors.",
-      "Powdery Mildew": "Implement fungicide treatments as needed.",
-      Anthracnose:
-        "Use disease-resistant varieties and maintain field sanitation.",
+        "To prevent Leaf Curl Virus, it's essential to use virus-resistant plant varieties that provide genetic resistance to the virus. Additionally, implement control measures for insect vectors that transmit the virus. These combined strategies help protect plants from Leaf Curl Virus.",
+      "Powdery Mildew": "For effective Powdery Mildew prevention, implement fungicide treatments as needed during the growing season. Regular monitoring is crucial to detect the disease early. Timely application of fungicides helps control the disease and protect plants.",
+      "Anthracnose":
+        "Preventing Anthracnose involves using disease-resistant plant varieties. Resistant varieties have genetic defenses against the pathogen. Maintain proper field sanitation by removing and destroying infected plant material to minimize disease pressure and ensure healthy plants.",
     },
   },
   {
@@ -958,11 +1018,14 @@ export const cropList = [
     id: 10,
     imgUrl: "https://media.sciencephoto.com/e7/70/09/17/e7700917-800px-wm.jpg",
     "Favorable Conditions": {
-      Climate: "Cool to warm temperate climates, 18°C to 25°C (64°F to 77°F)",
+      Climate: "Cool to warm temperate climates, 18°C to 30°C",
       Sunlight: "Full sun, at least 6-8 hours of direct sunlight",
       Rainfall:
-        "Moderate and well-distributed rainfall or irrigation, 250-450 mm (10-18 inches) per year",
-      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Moderate and well-distributed rainfall or irrigation, 35-55 mm per year",
+      Soil: "Well-drained loamy soils, slightly acidic to neutral pH (pH 6-8)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "55-80 mg",
+      Potassium : "15-25 mg"
     },
     "Unfavorable Conditions": {
       Waterlogging: "Excessive moisture can lead to root diseases.",
@@ -995,9 +1058,9 @@ export const cropList = [
       "Example: 10-20-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Ascochyta Blight":
-        "Use disease-resistant lentil varieties and implement fungicide treatments.",
-      "Fusarium Wilt": "Practice crop rotation and use resistant varieties.",
-      "Botrytis Gray Mold": "Implement fungicide treatments as needed.",
+        "To prevent Ascochyta Blight, it's essential to use disease-resistant lentil varieties. These varieties offer genetic resistance to the pathogen. Additionally, implement fungicide treatments during the growing season to control the disease and protect lentil crops.",
+      "Fusarium Wilt": "For effective Fusarium Wilt prevention, implement disease management strategies such as soil fumigation and biocontrol agents. Additionally, use disease-resistant lentil varieties to reduce disease impact. Combining these measures is crucial for long-term disease control.",
+      "Botrytis Gray Mold": "Preventing Botrytis Gray Mold involves improving air circulation within the lentil crop. This reduces humidity and disease-friendly conditions. Use fungicides as needed, especially during periods of high disease risk. Monitoring and prompt intervention are vital for effective disease control.",
     },
   },
   {
@@ -1007,11 +1070,14 @@ export const cropList = [
       "https://media.istockphoto.com/id/884148434/photo/pomegranate-trees.jpg?s=612x612&w=0&k=20&c=h7X1DPtPiY-GrMiguVx59IscC0hgUGe4Wg1fG3spIDs=",
     "Favorable Conditions": {
       Climate:
-        "Warm temperate to subtropical regions, 25°C to 35°C (77°F to 95°F)",
+        "Warm temperate to subtropical regions, 18°C to 25°C",
       Sunlight: "Full sun, at least 6-8 hours of direct sunlight",
       Rainfall:
-        "Moderate to low rainfall or irrigation, 500-1000 mm (20-40 inches) per year",
-      Soil: "Well-drained loamy or sandy soils, slightly acidic to neutral pH (pH 6-7)",
+        "Moderate to low rainfall or irrigation, 100-115 mm per year",
+      Soil: "Well-drained loamy or sandy soils, slightly acidic to neutral pH (pH 5.5-7.2)",
+      Nitrogen : "0-40 mg",
+      Phosphorus : "5-30 mg",
+      Potassium : "35-45 mg"
     },
     "Unfavorable Conditions": {
       Waterlogging: "Excessive moisture can lead to root diseases.",
@@ -1043,10 +1109,10 @@ export const cropList = [
       "Example: 10-10-10 (N-P-K ratio) with micronutrients",
     "Solution for Disease Prevention": {
       "Pomegranate Bacterial Blight":
-        "Use disease-resistant pomegranate varieties and implement copper-based treatments.",
-      "Powdery Mildew": "Implement regular fungicide spray programs.",
+        "To prevent Pomegranate Bacterial Blight, it's essential to use disease-resistant pomegranate varieties that provide genetic resistance to the disease. Additionally, implement copper-based treatments during the growing season to control the disease and protect pomegranate crops.",
+      "Powdery Mildew": "For effective Powdery Mildew prevention, implement regular fungicide spray programs to control the disease. Consistent monitoring and timely application of fungicides are essential to protect pomegranate crops from this fungal pathogen.",
       "Fruit Rot":
-        "Practice proper fruit harvesting and use fungicides as needed.",
+        "Preventing Fruit Rot involves practicing proper fruit harvesting techniques and maintaining orchard hygiene. Use fungicides as needed during periods of high disease risk to protect pomegranate fruit from rot and ensure crop quality.",
     },
   },
 ];
