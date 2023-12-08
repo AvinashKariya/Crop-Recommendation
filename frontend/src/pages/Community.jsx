@@ -98,7 +98,8 @@ const Community = () => {
     setLoader_submit(true);
     try {
       const response = await axios.post(
-        "http://127.0.0.1:5000/create-post",
+        `${import.meta.env.VITE_API_URL}/create-post` ||
+          "http://127.0.0.1:5000/create-post",
         data
       );
       const res = await response.data;
@@ -124,7 +125,10 @@ const Community = () => {
   const getPosts = async () => {
     setLoader(true);
     try {
-      const response = await axios.get("http://127.0.0.1:5000/get-all-posts");
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_URL}/get-all-posts` ||
+          "http://127.0.0.1:5000/get-all-posts"
+      );
       const res = await response.data;
       console.log(response);
       setData(res);
