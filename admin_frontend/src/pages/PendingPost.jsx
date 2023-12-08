@@ -74,7 +74,8 @@ const PendingPost = () => {
     // setLoader_submit(true);
     try {
       const response = await axios.put(
-        `http://127.0.0.1:5000/update_status/${objectId}`,
+        `${import.meta.env.VITE_API_URL}/update_status/${objectId}` ||
+          `http://127.0.0.1:5000/update_status/${objectId}`,
         {
           status: newStatus,
         }

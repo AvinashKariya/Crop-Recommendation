@@ -28,7 +28,8 @@ const AllPost = () => {
     setLoader(true);
     try {
       const response = await axios.get(
-        "http://127.0.0.1:5000/get-all-posts-admin"
+        `${import.meta.env.VITE_API_URL}/get-all-posts-admin` ||
+          "http://127.0.0.1:5000/get-all-posts-admin"
       );
       const res = await response.data;
       setData(res);
