@@ -457,7 +457,7 @@ const Predict = () => {
         </Typography>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2} style={{ marginTop: "10px" }}>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <Grid container spacing={2}>
                 <Grid item>
                   <FormControl sx={{ minWidth: 300 }}>
@@ -494,7 +494,7 @@ const Predict = () => {
                 )}
               </Grid>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <Grid container spacing={2}>
                 <Grid item>
                   <FormControl sx={{ minWidth: 300 }}>
@@ -533,7 +533,7 @@ const Predict = () => {
             </Grid>
           </Grid>
           <Grid container spacing={2} style={{ marginTop: "10px" }}>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <Grid container spacing={2}>
                 <Grid item>
                   <FormControl sx={{ minWidth: 300 }}>
@@ -570,7 +570,7 @@ const Predict = () => {
                 )}
               </Grid>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <Grid container spacing={2}>
                 <Grid item>
                   <FormControl sx={{ minWidth: 150 }}>
@@ -659,7 +659,7 @@ const Predict = () => {
             </Grid>
           </Grid>
           <Grid container spacing={2} style={{ marginTop: "10px" }}>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <Grid container spacing={2}>
                 <Grid item>
                   <FormControl sx={{ minWidth: 300 }}>
@@ -684,7 +684,7 @@ const Predict = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <Grid container spacing={2}>
                 <Grid item>
                   <FormControl sx={{ minWidth: 300 }}>
@@ -721,7 +721,7 @@ const Predict = () => {
             </Grid>
           </Grid>
           <Grid container spacing={2} style={{ marginTop: "10px" }}>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <Grid container spacing={2}>
                 <Grid item>
                   <FormControl sx={{ minWidth: 300 }}>

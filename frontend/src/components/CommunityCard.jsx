@@ -16,6 +16,9 @@ const CommunityCard = ({ data }) => {
         width: "455px",
         backgroundColor: "#F2FFE9",
         border: "1px solid #4F6F52",
+        "@media (max-width: 600px)": {
+          width: "100%", // Set a different width for screens with a max-width of 600 pixels (adjust as needed)
+        },
       }}
     >
       <CardContent>

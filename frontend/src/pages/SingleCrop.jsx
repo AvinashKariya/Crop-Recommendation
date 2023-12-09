@@ -85,6 +85,24 @@ const SingleCrop = () => {
                         {data["Favorable Conditions"].Soil}
                       </Typography>
                     </Typography>
+                    <Typography variant='h6'>
+                      Nitrogen:{" "}
+                      <Typography>
+                        {data["Favorable Conditions"].Nitrogen}
+                      </Typography>
+                    </Typography>
+                    <Typography variant='h6'>
+                      Phosphorus:{" "}
+                      <Typography>
+                        {data["Favorable Conditions"].Phosphorus}
+                      </Typography>
+                    </Typography>
+                    <Typography variant='h6'>
+                      Potassium :{" "}
+                      <Typography>
+                        {data["Favorable Conditions"].Potassium}
+                      </Typography>
+                    </Typography>
                   </AccordionDetails>
                 </Accordion>
               </div>
